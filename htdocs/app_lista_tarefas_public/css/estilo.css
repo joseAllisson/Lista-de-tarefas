@@ -1,0 +1,112 @@
+.menu {
+	margin-bottom: 25px;
+}
+
+.app {
+	margin-top: 25px;
+}
+
+.pagina {
+	border:solid 1px #DFDFDF;
+	padding:25px !important;
+}
+
+li.list-group-item.active {
+	background-color: #fff;
+	border-color: #009933;
+    border-left:solid 10px #009933;
+}
+
+li a {
+	color: #212529;
+}
+
+li a:hover {
+	text-decoration: none;
+}
+
+h4 {
+	color: #009933 !important;
+}
+
+/* css adicionado */
+
+.container-icons{
+	height: 100vh;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+	justify-items: center;
+	position: fixed;
+	z-index: 9999;
+	background-color: rgb(166, 178, 248);
+
+	animation: animaFundo 2s linear forwards;
+
+}
+
+.icon{
+	margin-top: 100px;
+    width: 500px;
+}
+
+.icon path:nth-child(1){
+    /* cor do fundo do icone */
+    fill: transparent;
+    /* tamanho da linha em volta do icone */
+    stroke-width: 10;
+    /* cor da linha */
+    stroke: #111;
+}
+
+.icon path:nth-child(2){
+    /* cor do fundo do icone */
+    fill: transparent;
+    /* tamanho da linha em volta do icone */
+    stroke-width: 10;
+    /* cor da linha */
+    stroke: #4CAF50;
+}
+
+.icon.correct path:nth-child(1){
+    stroke-dashoffset: 2230;
+    stroke-dasharray: 2230;
+    animation: anima 1s linear forwards;
+   
+}
+
+.icon.correct path:nth-child(2){
+    stroke-dashoffset: 2230;
+    stroke-dasharray: 2230;
+    animation: anima2 1s linear forwards;
+   
+}
+
+/* preto */
+@keyframes anima{
+    
+    0%{
+        stroke-dashoffset: 2230;
+    }
+    100%{
+        fill: #111;
+        stroke-dashoffset:4460;
+    }
+
+}
+/* verde */
+@keyframes anima2{
+    
+    0%{
+        stroke-dashoffset: 2230;
+    }
+    90%{
+        fill: transparent;
+        stroke-dashoffset:4460;
+    }
+    100%{
+        fill: #4CAF50;
+        stroke-dashoffset:4460;
+    }
+
+}
